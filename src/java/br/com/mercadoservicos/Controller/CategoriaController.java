@@ -28,7 +28,7 @@ public class CategoriaController {
     }
     
     public String cancelar(){
-        return "private/cadastros/categoria/List.xhtml?faces-redirect=true";
+        return "private/cadastros/categoria/list.xhtml?faces-redirect=true";
     }
 
     public Integer getId() {
