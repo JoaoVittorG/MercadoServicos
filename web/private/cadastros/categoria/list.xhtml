@@ -8,8 +8,8 @@
     </h:head>
     <h:body>
         <h1>Categoria</h1>
-        <p:dataTable value="#{categoriaMB.categorias}" var="categoria">
-
+        <p:dataTable value="#{categoriaMB.categorias}" var="categoria" emptyMessage="Nao contem nada">
+            
             <p:column headerText="Descrição">
                 #{categoria.descricao}
             </p:column>
