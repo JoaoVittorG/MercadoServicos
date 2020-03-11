@@ -13,7 +13,7 @@ public class CategoriaController {
     private Integer id;
     private String descricao;
     private List<Categoria> categorias;
-    private CategoriaService categoriaService;
+    private CategoriaService categoriaService = new CategoriaService();
     
     public CategoriaController(){
         listar();
@@ -54,6 +54,5 @@ public class CategoriaController {
     public void setCategorias(List<Categoria> categorias) {
         this.categorias = categorias;
     }
-    
-    
+       
 }

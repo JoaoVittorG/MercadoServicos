@@ -9,10 +9,12 @@
     <h:body>
         <h1>Categoria</h1>
         <p:dataTable value="#{categoriaMB.categorias}" var="categoria">
+
             <p:column headerText="Descrição">
                 #{categoria.descricao}
             </p:column>
         </p:dataTable>
+        <p:commandButton value="Novo" action="#{categoriaMB.novo()}"/>
     </h:body>
 </html>
 
